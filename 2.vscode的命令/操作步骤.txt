@@ -1,0 +1,8 @@
+1.通过查看visual studio code的属性信息，找到command属性
+执行的command为：
+kylin@kylin-virtual-machine:/usr/share/code$ pwd
+/usr/share/code
+直接输入code命令就可以运行vs code，应该是设置了路径
+确实在环境变量中找到：
+kylin@kylin-virtual-machine:/usr/bin$ find code
+code
