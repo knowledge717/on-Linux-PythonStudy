@@ -1,0 +1,15 @@
+#实现在任何地方都是执行脚本
+1.创建脚本
+文件具体如下：
+kylin@kylin-virtual-machine:~/pathdir$ cat hello.py 
+#!/usr/bin/python
+#filename:hello.py
+print'hello word';
+2.查看环境变量
+kylin@kylin-virtual-machine:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+3.添加环境变量
+kylin@kylin-virtual-machine:~$ PATH=$PATH:/home/kylin/pathdir
+4.直接输入文件名称即可执行脚本
+kylin@kylin-virtual-machine:~/pathdir$ hello.py
+hello word
